@@ -1,0 +1,21 @@
+
+
+/*今月のカレンダー*/
+table.calendar{
+    /*中の枠線はあり、外枠線がなし。*/
+    /*border-collapse: separate;*/
+
+}
+/*曜日部分*/
+table.calendar > thead{
+    background :#99ff99;
+}
+/*日付部分*/
+table.calendar > tbody{
+    /*border:solid ;*/
+    background :#9999ff;
+}
+/*各セル*/
+table.calendar > td{
+    background: red;
+}
