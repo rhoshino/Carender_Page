@@ -1,0 +1,29 @@
+#body{width:800;margin:0px;padding:0px;}
+#box0{
+      top:0px;
+      left:0px;
+      width:173px;
+      height:100px;
+      position:absolute;
+}
+#box1{
+      top:0px;
+      left:180px;
+      width:100px;
+      height:100px;
+      position:absolute;
+}
+#box2{
+      top:0px;
+      left:297px;
+      width:100px;
+      height:100px;
+      position:absolute;
+}
+#box3{
+      top:0px;
+      left:442px;
+      width:100px;
+      height:100px;
+      position:absolute;
+}

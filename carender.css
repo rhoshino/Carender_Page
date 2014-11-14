@@ -1,21 +1,96 @@
 
+*{
+    font-family: Verdana,Arial,"メイリオ";
+    font-size: 14px;
+}
 
+#container{
+    margin: 0 auto;
+    max-width: 770;
+}
+
+#header{
+    display: -webkit-flex;
+    display: flex;
+}
+.big_this_month{
+    -wevkit-flex:2;
+    flex:2;
+}
+.nengo{
+    -wevkit-flex:1;
+    flex:1;
+}
+.sub_calender{
+    display: -webkit-flex;
+    display: flex;
+    background-color: green;
+    flex:4;
+}
+table.prev_calender{
+    width: 50%;
+    flex:1;
+
+    border={"0" cellpadding="2" cellspacing="1" bgcolor="#CCCCCC" width=100%;}
+}
+
+
+
+.next_calender{
+    width: 50%;
+     flex:1;
+    height: 100;
+    background: blue;
+}
 /*今月のカレンダー*/
 table.calendar{
     /*中の枠線はあり、外枠線がなし。*/
-    /*border-collapse: separate;*/
+    border-collapse: collapse;
+    /*border: 1px black solid;*/
+    border-radius:10px;
 
+    table-layout: fixed;
+    width: 100%;
+
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
 }
 /*曜日部分*/
 table.calendar > thead{
-    background :#99ff99;
+    background :#6b6b6b;
 }
 /*日付部分*/
 table.calendar > tbody{
     /*border:solid ;*/
-    background :#9999ff;
+    /*background :#9999ff;/*debug*/*/
 }
-/*各セル*/
-table.calendar > td{
-    background: red;
+/*曜日セル0*/
+table.calendar th{
+    border: 1px black solid;
+    font-weight:thin;
+    color :#ffffff;
+
+    height: 25px;
+    text-align: center;
 }
+/*日付セル*/
+table.calendar td{
+    border: 1px black solid;
+    height:100px;
+    font-size:30px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+}
+/*休日セル*/
+table.calendar td.holyday{
+    color:#ff2e2e;
+}
+
+/*先月の日付セル*/
+table.calendar td.prev-month{
+    background:#e0e0e0;
+    color:#969696;
+}
+
